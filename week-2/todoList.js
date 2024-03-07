@@ -6,7 +6,6 @@ app.use(express.json())
 const users = []
 
 app.post("/todos",(req, res) => {
-    // Request Body: { "title": "Buy groceries", "completed": false, description: "I should buy groceries" }?
     const { title , completed , description } = req.body
     if(!title || !completed || !description) {
         return res.status(400).send("Please enter the details correctly")
@@ -39,23 +38,11 @@ app.get("/todos",(req, res) => {
 
 app.get("/todos/:id", (req, res)=>{
     const id  = parseInt(req.params.id)
-    // let a = typeof(id)
-    // console.log(a)
-    // const id2 = parseInt(req.params.id)
-    // let b = typeof(id2)
-    // console.log(b)
+    
     if(!id){
         return res.status(400).send("Send Id")
     }
 
-    // const todo = users.find( todos => todos.id === id)
-    // if(todo){
-    //     return res.status(200).json(todo)
-    // }
-    // else {
-    //     return res.status(400).send("Invalid ID")
-    // }
-    // console.log(id)
     for ( let i = 0; i <= users.length; i++) {
         if(users[i].id == id){
             return res.status(200).json(users[i])
