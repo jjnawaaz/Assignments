@@ -8,7 +8,7 @@ app.use(express.json())
 // Made a post API to signup 
 app.post('/signup', (req, res) => {
  const { username, email , password } = req.body
- if(!username || !email || !password){
+ if(!username || !email || !password) {
   return res.status(400).send("Please enter the details correctly")
  }
 
@@ -33,10 +33,6 @@ res.status(200).send({
 
 })
 
-
-
-
-
 app.post('/signin', (req, res) => {
   const { email, password } = req.body
   if(!email || !password){
@@ -57,12 +53,6 @@ app.post('/signin', (req, res) => {
 
 
 })
-
-
-
-
-
-
 
 app.get('/data', (req, res) => {
   
