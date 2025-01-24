@@ -1,8 +1,9 @@
 * {
   margin: 0;
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-  background-color: black;
 }
+
+/* Navbar  CSS */
 
 .navbar {
   display: flex;
@@ -53,12 +54,13 @@
 }
 .navbar-search-button input {
   padding: 8px;
+  background: black;
   border: 1px solid rgb(255, 255, 255, 0.2);
   border-radius: 5px;
   font-size: 16px;
 }
 .navbar-search-button button {
-  background-color: #1aa3ff;
+  background-color: #008ae6;
   color: white;
   border: none;
   padding: 7px;
@@ -66,4 +68,116 @@
   width: 120px;
   margin-left: 20px;
   border-radius: 5px;
+}
+
+/* Section Before hero  CSS */
+.before-hero {
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.before-hero a {
+  text-decoration: none;
+  color: #007acc;
+}
+.before-hero p {
+  color: grey;
+  margin-left: 10px;
+}
+
+/* Hero  CSS */
+
+.hero {
+  background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
+  color: white;
+  padding: 50px 20px;
+}
+
+.hero-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-container-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-container-content > div {
+  text-align: left;
+}
+
+.hero-container-content span {
+  color: #9ba3b4;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.hero-container-content h2 {
+  font-size: 3em;
+  margin: 0;
+  text-align: left;
+}
+
+.hero-container-content button {
+  display: inline-block;
+  background: #0078d4;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+/* Footer Section */
+
+.footer {
+  color: white;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-inline: 2.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.verticalCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-container p {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 160%;
+  color: #9ba3b4;
+}
+
+.footer-icons img {
+  height: 40px;
+  width: auto;
 }
