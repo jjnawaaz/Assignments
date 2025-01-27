@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Responsive</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+           
+           
+            <!-- For Mobile  -->
+            <svg onclick="Click()"  width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 7L4 7" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+                <path opacity="0.5" d="M20 12L4 12" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 17L4 17" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            
+            <!-- For Mobile NavBar     -->
+            <!-- <ul class="navbar-menu-mobile">
+                <li>Menu</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Email</li>
+            </ul> -->
+
+            <!-- For PC -->
+            <ul class="navbar-menu navbar-menu-mobile ">
+                <li>Menu</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Email</li>
+            </ul>
+
+           
+            <input type="text" placeholder="Search.." class="navbar-search">
+        </div>
+    </nav>
+</body>
+
+<script>
+    function Click(){
+        
+        let a = document.getElementsByTagName("ul")
+        
+        if(a[0].classList == 'navbar-menu'){
+            a[0].classList = 'navbar-menu-mobile'
+            console.log(a[0].classList)
+
+        } else {
+            a[0].classList = ['navbar-menu']
+            console.log(a[0].classList)
+
+        }       
+        return
+
+        
+
+        
+        // if(a[0].style.visibility){
+        //     a[0].style.visibility = ""
+        // } else {
+        //     a[0].style.visibility = "visible"
+        // }
+
+        // return
+
+    }
+</script>
+</html>

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    border: 1px solid red;
+}
+
+
+/* Ignored CSS */
+
+svg{
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.navbar-menu-mobile{
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/* Navbar Css */
+nav{
+    background-color: black;
+}
+
+
+
+
+
+
+.navbar{
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-search{
+    width: 18%;
+    background-color: hsla(0, 7%, 82%, 0.93);
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+    border: none;
+    outline: none;
+    transition: 0.17s;
+}
+
+.navbar-search[type=text]:focus{
+border: 1px solid whitesmoke;
+border-radius: 8px;
+}
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 600px) {
+
+   .navbar-menu{
+    visibility: hidden;
+    position: absolute;
+   }
+   .navbar-search{
+    width: 75%;
+   }
+
+   svg{
+    margin-left: -20px;;
+    visibility: visible;
+    position: static;
+    height: 3.5rem;
+   }
+}
