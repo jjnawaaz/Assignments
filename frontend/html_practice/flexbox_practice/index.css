@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    border: 1px solid red;
 }
 
 
@@ -65,14 +64,61 @@ border: 1px solid whitesmoke;
 border-radius: 8px;
 }
 
+
+
+/* Hero Section  */
+.hero{
+    background-color: green;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-card{
+    display: flex;
+    padding: 25vh;
+    height: 25vh;
+    background-color: aqua;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
 /* Mobile CSS */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
    .navbar-menu{
     visibility: hidden;
     position: absolute;
    }
+
+   .navbar-menu-mobile{
+    background-color: black;
+    position: relative;
+    color: white;
+    visibility: visible;
+    width: 100%;
+    border: 2px solid white;
+    padding: 0;
+    height: 100vh;
+   }
+
+   .navbar-menu-mobile li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+   }
+
+
    .navbar-search{
     width: 75%;
    }
@@ -83,4 +129,14 @@ border-radius: 8px;
     position: static;
     height: 3.5rem;
    }
+.hero{
+    flex-direction: column;
+
+}
+.hero-card{
+    margin: 20px;
+    justify-content: center;
+    padding: 30vw;
+}
+
 }

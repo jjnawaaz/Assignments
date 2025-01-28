@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 
-<body>
+<body  onload="Click()" >
     <nav>
         <div class="navbar">
            
@@ -18,17 +18,9 @@
                 <path opacity="0.5" d="M20 12L4 12" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M20 17L4 17" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
-            
-            <!-- For Mobile NavBar     -->
-            <!-- <ul class="navbar-menu-mobile">
-                <li>Menu</li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Email</li>
-            </ul> -->
 
             <!-- For PC -->
+            
             <ul class="navbar-menu navbar-menu-mobile ">
                 <li>Menu</li>
                 <li>Home</li>
@@ -41,35 +33,14 @@
             <input type="text" placeholder="Search.." class="navbar-search">
         </div>
     </nav>
+
+   <section class="hero">
+        <div class="hero-card">Hi</div>
+        <div class="hero-card">Hi</div>
+        <div class="hero-card">Hi</div>
+   </section>
 </body>
 
-<script>
-    function Click(){
-        
-        let a = document.getElementsByTagName("ul")
-        
-        if(a[0].classList == 'navbar-menu'){
-            a[0].classList = 'navbar-menu-mobile'
-            console.log(a[0].classList)
-
-        } else {
-            a[0].classList = ['navbar-menu']
-            console.log(a[0].classList)
-
-        }       
-        return
-
-        
-
-        
-        // if(a[0].style.visibility){
-        //     a[0].style.visibility = ""
-        // } else {
-        //     a[0].style.visibility = "visible"
-        // }
-
-        // return
-
-    }
-</script>
+<script src="./index.js">
+ </script>
 </html>
