@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-mobile-icon{
+    visibility: hidden;
+}
+
+
+.nav-logo input{
+color: white;
+}
+
+
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li{
+    padding: 20px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+}
+
+.nav-search input{
+    width: 15rem;
+    height: 2.0rem;
+}
+
+.nav-search button{
+    width:5rem;
+    height: 2.0rem;
+    margin-right: 1.5rem;
+    background-color:  rgb(255, 255, 255);
+    color: black;
+    border-radius: 8px;
+}
+
+.nav-search button:hover{
+    background-color: rgba(0, 200, 255, 0.922);
+}
+
+
+
+
+/* For Mobile  */
+@media only screen and (max-width: 950px) {
+   .nav-menu {
+        display: none;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .nav-search{
+        justify-content: center;
+    }
+
+    .nav-mobile-icon{
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: black;
+        justify-content: space-around;
+        /* visibility: hidden; */
+    }
+    input[type="checkbox"]:checked {
+        background-color: red;
+    }
+    .nav-menu li{
+        border-bottom: 2px solid white;
+        width: 50vw;
+    }
+    .nav-menu li a{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-logo input:checked ~ .nav-menu{
+        visibility: visible;
+    }
+}
