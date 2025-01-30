@@ -94,7 +94,7 @@ color: white;
         justify-content: space-around;
         /* visibility: hidden; */
     }
-    input[type="checkbox"]:checked {
+    #sidebar-on:checked {
         background-color: red;
     }
     .nav-menu li{
